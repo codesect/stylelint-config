@@ -1,0 +1,43 @@
+{
+  "name": "@codesect/stylelint-config",
+  "version": "0.1.0",
+  "description": "CodeSect shareable config for stylelint",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore \"**/*.js\"",
+    "format": "prettier '**/*.{js,json,md}' --write --list-different",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codesect/stylelint-config.git"
+  },
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "lint",
+    "css",
+    "scss",
+    "sass"
+  ],
+  "author": "Zsolt Meszaros",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codesect/stylelint-config/issues"
+  },
+  "homepage": "https://github.com/codesect/stylelint-config#readme",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.7.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "stylelint": "^12.0.0"
+  },
+  "dependencies": {
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-scss": "^3.12.1"
+  },
+  "peerDependencies": {
+    "stylelint": "^10.0.0 || ^11.0.0 || ^12.0.0"
+  }
+}
