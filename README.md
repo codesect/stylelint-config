@@ -20,14 +20,14 @@ You can reference/extend the config in your `.stylelintrc` [config object](https
 }
 ```
 
-You can override the rules by adding a `"rules"` key to your config file. For example, if you want to allow ID selectors, you can set `selector-no-id` to `null` and to use tabs instead of spaces, you can set `indentation` to `tab`:
+You can override the rules by adding a `"rules"` key to your config file. For example, if you want to allow ID selectors, you can set `selector-max-id` to `null` and to use tabs instead of spaces, you can set `indentation` to `tab`:
 
 ```JSON
 {
   "extends": "@codesect/stylelint-config",
   "rules": {
     "indentation": "tab",
-    "selector-no-id": null
+    "selector-max-id": null
   }
 }
 ```

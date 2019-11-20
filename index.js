@@ -31,7 +31,6 @@ module.exports = {
     'selector-max-id': 0,
     'selector-max-type': 2,
     'selector-max-universal': 1,
-    'selector-no-id': true,
     'selector-no-qualifying-type': true,
     'selector-no-vendor-prefix': true,
     'shorthand-property-no-redundant-values': true,
