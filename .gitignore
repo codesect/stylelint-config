@@ -8,3 +8,6 @@ npm-debug.log*
 
 # Optional eslint cache
 .eslintcache
+
+# Lock files
+package-lock.json
