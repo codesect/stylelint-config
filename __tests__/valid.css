@@ -1,0 +1,92 @@
+@import url("x.css");
+
+*,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/**
+ * Multi-line comment
+ */
+.selector-1,
+.selector-2,
+.selector-3[type="text"] {
+  background-image: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
+  color: #333;
+  display: block;
+  font-weight: 300;
+  margin: 1rem auto;
+}
+
+.selector-a,
+.selector-b:not(:first-child) {
+  border: 0;
+  padding: 0.625rem;
+  top: calc(calc(1rem * 2.5) / 3);
+}
+
+.selector-x {
+  width: 10%;
+}
+
+.selector-y {
+  width: 20%;
+}
+
+.selector-z {
+  width: 30%;
+}
+
+.selector-e::before {
+  content: "x";
+}
+
+@media (min-width: 600px) {
+  .selector {
+    transform: translate(1, 1) scale(3);
+  }
+}
+
+@media (orientation: portrait), projection and (color) {
+  .selector-i + .selector-ii {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+  }
+}
+
+/* Single line comment */
+@media screen and (min-resolution: 192dpi) {
+  .selector {
+    background-image:
+      repeating-linear-gradient(
+        -45deg,
+        transparent,
+        #fff 25px,
+        rgba(255, 255, 255, 0.85) 50px
+      );
+    box-shadow:
+      0 1px 1px #000,
+      0 1px 0 #fff,
+      2px 2px 1px 1px #ccc inset;
+    height: 10rem;
+    margin: 12px;
+    margin-bottom: 6px;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

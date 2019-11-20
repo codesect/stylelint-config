@@ -1,2 +1,7 @@
 package.json
 package-lock.json
+
+invalid.css
+invalid.scss
+valid.css
+valid.scss
