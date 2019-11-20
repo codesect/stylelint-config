@@ -2,6 +2,32 @@ module.exports = {
   extends: ['./'],
   plugins: ['stylelint-scss'],
   rules: {
+    'at-rule-empty-line-before': [
+      'always',
+      {
+        except: ['blockless-after-same-name-blockless', 'first-nested'],
+        ignore: ['after-comment'],
+        ignoreAtRules: ['include'],
+      },
+    ],
+    'at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: [
+          'each',
+          'else',
+          'extend',
+          'for',
+          'function',
+          'if',
+          'include',
+          'mixin',
+          'return',
+          'while',
+        ],
+      },
+    ],
+    'function-name-case': null,
     'scss/at-function-named-arguments': [
       'always',
       { ignore: ['single-argument'] },
@@ -16,6 +42,7 @@ module.exports = {
     ],
     'scss/at-mixin-parentheses-space-before': 'never',
     'scss/at-rule-no-unknown': true,
+    'scss/declaration-nested-properties-no-divided-groups': true,
     'scss/dollar-variable-colon-newline-after': 'always-multi-line',
     'scss/dollar-variable-colon-space-after': 'always',
     'scss/dollar-variable-colon-space-before': 'never',
@@ -29,9 +56,8 @@ module.exports = {
     ],
     'scss/double-slash-comment-inline': 'never',
     'scss/double-slash-comment-whitespace-inside': 'always',
-    'scss/declaration-nested-properties-no-divided-groups': true,
     'scss/no-duplicate-dollar-variables': [
-      null,
+      true,
       {
         ignoreInsideAtRules: ['if', 'mixin'],
       },
