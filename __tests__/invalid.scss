@@ -1,0 +1,126 @@
+
+$colors: (
+  primary: #fb0,
+  secondary: #0963a0,
+);
+
+@mixin test {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// scss/at-function-named-arguments
+.foo {
+  animation: animation(250ms, infinite);
+}
+
+// scss/at-function-parentheses-space-before
+@function foo ($arg) {
+  @return $arg / 2;
+}
+
+// scss/at-import-no-partial-leading-underscore
+@import "_bar";
+
+// scss/at-import-partial-extension
+@import "file.scss";
+
+// scss/at-mixin-argumentless-call-parentheses
+.first {
+  @include test;
+}
+
+// scss/at-mixin-named-arguments
+.second {
+  @include animation(250ms, infinite);
+}
+
+// scss/at-mixin-parentheses-space-before
+@mixin square ($size, $radius: 0) {
+  width: $size;
+  height: $size;
+
+  @if $radius != 0 {
+    border-radius: $radius;
+  }
+}
+
+// scss/at-rule-no-unknown
+@unknown (max-width: 960px) {
+  float: left;
+}
+
+// TODO: doesn't raise warning?
+// scss/declaration-nested-properties-no-divided-groups
+blockquote {
+  background: url("img.png") center {
+    size: auto;
+  }
+
+  background: crimson {
+    repeat: no-repeat;
+  }
+}
+
+// scss/dollar-variable-colon-newline-after
+$box-shadow: 0 0 0 1px #5b9dd9,
+  0 0 2px 1px rgba(30, 140, 190, 0.8);
+
+// scss/dollar-variable-colon-space-after
+a { $var:10px; }
+
+// scss/dollar-variable-colon-space-before
+p { $spacing : 10px; }
+
+// scss/dollar-variable-no-missing-interpolation
+$counter: "my-counter";
+
+.third {
+  counter-reset: $counter;
+}
+
+// scss/double-slash-comment-empty-line-before
+.comment {
+  font-weight: 400;
+}
+// invalid comment
+
+// scss/double-slash-comment-inline
+.inline-comment {
+  padding-bottom: 1rem; // invalid inline comment
+}
+
+// scss/double-slash-comment-whitespace-inside
+//no whitespace after slashes
+
+// scss/no-duplicate-dollar-variables
+$i: 1;
+$i: 2;
+
+// scss/no-duplicate-mixins
+@mixin font-size-default {
+  font-size: 16px;
+}
+
+@mixin font-size-default {
+  font-size: 18px;
+}
+
+// scss/operator-no-newline-after
+span { width: 10 +
+1; }
+
+// scss/operator-no-newline-before
+i { width: 10
+  + 1; }
+
+// scss/operator-no-unspaced
+em { width: 10+1; }
+
+// scss/selector-no-redundant-nesting-selector
+div {
+  & > .last {
+    margin: 0;
+  }
+}

@@ -1,0 +1,57 @@
+@import "../some/url";
+
+$colors: (
+  black: #000,
+  primary: #fb0,
+  secondary: #0963a0,
+  white: #fff,
+);
+
+$border-width: 2px;
+$margin-bottom: 1rem;
+$padding: 1rem;
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+
+  @return #{$remSize}rem;
+}
+
+@function color-level($color: $primary, $level: 0) {
+  $level: abs($level);
+
+  @return mix(map-get($colors, black), $color, $level * 5%);
+}
+
+@mixin border-radius($radius: $border-radius, $fallback-border-radius: false) {
+  @if $enable-rounded {
+    border-radius: $radius;
+  }
+
+  @else if $fallback-border-radius != false {
+    border-radius: $fallback-border-radius;
+  }
+}
+
+@mixin fontSize($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+body {
+  color: #333;
+  margin: 0;
+}
+
+h1 {
+  border: 0;
+  @include fontSize(32px);
+}
+
+.alert {
+  border: $border-width solid transparent;
+  margin-bottom: $margin-bottom;
+  padding: $padding;
+  position: relative;
+  @include border-radius($border-radius);
+}
