@@ -1,6 +1,6 @@
 # @codesect/stylelint-config
 
-> Shared stylelint config for all CodeSect projects. This config is based on [`stylelint-config-standard`](https://github.com/stylelint/stylelint-config-standard).
+> Shared stylelint config for all [CodeSect](https://github.com/codesect) projects. This config is based on [`stylelint-config-standard`](https://github.com/stylelint/stylelint-config-standard).
 
 ## Install
 
@@ -8,6 +8,12 @@
 npm install -D @codesect/stylelint-config
 # Or with yarn:
 yarn add @codesect/stylelint-config --dev
+```
+
+This package requires `stylelint` version 11 or greater. You can either install it yourself as a dev dependency or use `npx install-peerdeps ...` which will install both our stylelint config and its peers:
+
+```sh
+npx install-peerdeps --dev @codesect/stylelint-config
 ```
 
 ## Usage
