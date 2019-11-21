@@ -1,6 +1,6 @@
 {
   "name": "@codesect/stylelint-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CodeSect shareable config for stylelint",
   "main": "index.js",
   "scripts": {
@@ -30,6 +30,10 @@
     "url": "https://github.com/codesect/stylelint-config/issues"
   },
   "homepage": "https://github.com/codesect/stylelint-config#readme",
+  "dependencies": {
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-scss": "^3.12.1"
+  },
   "devDependencies": {
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.7.0",
@@ -37,11 +41,7 @@
     "prettier": "^1.19.1",
     "stylelint": "^12.0.0"
   },
-  "dependencies": {
-    "stylelint-config-standard": "^19.0.0",
-    "stylelint-scss": "^3.12.1"
-  },
   "peerDependencies": {
-    "stylelint": "^10.0.0 || ^11.0.0 || ^12.0.0"
+    "stylelint": "^11.0.0 || ^12.0.0"
   }
 }
