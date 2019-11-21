@@ -8,6 +8,10 @@
     "format": "prettier '**/*.{js,json,md}' --write --list-different",
     "test": "jest"
   },
+  "files": [
+    "index.js",
+    "scss.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codesect/stylelint-config.git"
