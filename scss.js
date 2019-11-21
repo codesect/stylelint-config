@@ -28,10 +28,6 @@ module.exports = {
       },
     ],
     'function-name-case': null,
-    'scss/at-function-named-arguments': [
-      'always',
-      { ignore: ['single-argument'] },
-    ],
     'scss/at-function-parentheses-space-before': 'never',
     'scss/at-import-no-partial-leading-underscore': true,
     'scss/at-import-partial-extension': 'never',
@@ -43,7 +39,6 @@ module.exports = {
     'scss/at-mixin-parentheses-space-before': 'never',
     'scss/at-rule-no-unknown': true,
     'scss/declaration-nested-properties-no-divided-groups': true,
-    'scss/dollar-variable-colon-newline-after': 'always-multi-line',
     'scss/dollar-variable-colon-space-after': 'always',
     'scss/dollar-variable-colon-space-before': 'never',
     'scss/dollar-variable-no-missing-interpolation': true,

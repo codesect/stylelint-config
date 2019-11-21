@@ -10,11 +10,6 @@ $colors: (
   list-style: none;
 }
 
-// scss/at-function-named-arguments
-.foo {
-  animation: animation(250ms, infinite);
-}
-
 // scss/at-function-parentheses-space-before
 @function foo ($arg) {
   @return $arg / 2;
@@ -62,10 +57,6 @@ blockquote {
     repeat: no-repeat;
   }
 }
-
-// scss/dollar-variable-colon-newline-after
-$box-shadow: 0 0 0 1px #5b9dd9,
-  0 0 2px 1px rgba(30, 140, 190, 0.8);
 
 // scss/dollar-variable-colon-space-after
 a { $var:10px; }
