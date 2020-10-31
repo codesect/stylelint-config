@@ -1,6 +1,11 @@
 module.exports = {
   extends: ['stylelint-config-standard'],
+  plugins: ['stylelint-a11y'],
   rules: {
+    'a11y/no-obsolete-attribute': true,
+    'a11y/no-obsolete-element': true,
+    'a11y/no-outline-none': true,
+    'a11y/no-text-align-justify': true,
     'at-rule-name-space-after': 'always',
     'at-rule-no-vendor-prefix': true,
     'at-rule-semicolon-space-before': 'never',

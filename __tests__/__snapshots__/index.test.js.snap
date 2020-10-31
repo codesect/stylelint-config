@@ -3,6 +3,34 @@
 exports[`Invalid CSS config matches snapshot 1`] = `
 Array [
   Object {
+    "column": 3,
+    "line": 198,
+    "rule": "a11y/no-obsolete-attribute",
+    "severity": "error",
+    "text": "Unexpected using obsolete attribute \\"img[align]\\" (a11y/no-obsolete-attribute)",
+  },
+  Object {
+    "column": 4,
+    "line": 204,
+    "rule": "a11y/no-obsolete-element",
+    "severity": "error",
+    "text": "Unexpected using obsolete selector \\"blink\\" (a11y/no-obsolete-element)",
+  },
+  Object {
+    "column": 5,
+    "line": 209,
+    "rule": "a11y/no-outline-none",
+    "severity": "error",
+    "text": "Unexpected using \\"outline\\" property in .no-outline:focus (a11y/no-outline-none)",
+  },
+  Object {
+    "column": 6,
+    "line": 214,
+    "rule": "a11y/no-text-align-justify",
+    "severity": "error",
+    "text": "Unexpected using \\"{ text-align: justify; }\\" in .no-justify (a11y/no-text-align-justify)",
+  },
+  Object {
     "column": 17,
     "line": 3,
     "rule": "at-rule-semicolon-space-before",
