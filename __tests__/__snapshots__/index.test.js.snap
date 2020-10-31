@@ -68,9 +68,9 @@ Array [
   Object {
     "column": 3,
     "line": 38,
-    "rule": "declaration-property-value-blacklist",
+    "rule": "declaration-property-value-disallowed-list",
     "severity": "error",
-    "text": "Unexpected value \\"none\\" for property \\"border\\" (declaration-property-value-blacklist)",
+    "text": "Unexpected value \\"none\\" for property \\"border\\" (declaration-property-value-disallowed-list)",
   },
   Object {
     "column": 16,

@@ -7,7 +7,7 @@ module.exports = {
     'declaration-block-semicolon-newline-before': 'never-multi-line',
     'declaration-colon-space-after': 'always-single-line',
     'declaration-no-important': true,
-    'declaration-property-value-blacklist': { '/^border/': ['none'] },
+    'declaration-property-value-disallowed-list': { '/^border/': ['none'] },
     'font-family-name-quotes': 'always-where-recommended',
     'font-weight-notation': ['numeric', { ignore: ['relative'] }],
     'function-parentheses-space-inside': 'never-single-line',
